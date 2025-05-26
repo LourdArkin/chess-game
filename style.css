@@ -9,7 +9,7 @@ body {
     /* Use vw units to make the chessboard responsive */
     width: 80vw;
     height: 80vw;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -32,9 +32,39 @@ body {
     background-color: #7d9fb3;
 }
 
+.coordinate {
+    height:auto;
+    display: flex;
+    bottom: 4%;
+    left: 4%;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.rank {
+    top: 4%;
+    right: 4%;
+    left: auto;
+}
+
+.whiteText {
+    color: #d7e3e7; 
+}
+.blackText {
+    color: #7d9fb3; 
+}
+
 @media (min-width:600px) {
-    .chessboard {
+    .chessBoard {
         width:600px;
         height:600px;
+    }
+}
+
+@media (max-width:600px) {
+    .coordinate {
+        font-size: 8px;
     }
 }
